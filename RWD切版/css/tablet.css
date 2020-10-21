@@ -1,0 +1,90 @@
+* {
+  /* 不用算padding增加的寬高 */
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+.left_area {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+  padding: 10px 20px;
+}
+.mb_btn{
+  display: none;
+}
+.logo {
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-position: 40% 50%;
+  background-image: url(../image/moneycat.jpg);
+  float: left;
+}
+.nav_btn {
+  float: right;
+  height: 100%;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 28px 0;
+  /* 總高100px - 父層padding的20px - 文字24px=56px*/
+}
+.btn {
+  margin-right: 10px;
+}
+/* 電腦版的右邊區塊=平板版的下方區塊 */
+.right_area {
+  /* 
+    height或width要寫100%
+    父層需設定寬高才有用
+  */
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: lightseagreen;
+  padding: 45px 20px 0;
+}
+.block {
+  width: 100%;
+  height: 800px;
+  background-color: orangered;
+}
+#box_x {
+  width: 100%;
+  height: calc(50% - 2.5px);
+  float: left;
+  background-image: url(../image/img_parallax.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#box_y {
+  width: calc(50% - 2.5px);
+  height: calc(50% - 2.5px);
+  float: left;
+  background-image: url(../image/img_parallax2.jpg);
+  margin-top: 5px;
+  background-size: cover;
+  background-position: center;
+}
+#box_z {
+  width: calc(50% - 2.5px);
+  height: calc(50% - 2.5px);
+  float: left;
+  background-image: url(../image/img_parallax3.jpg);
+  margin-top: 5px;
+  margin-left: 5px;
+  background-size: cover;
+  background-position: center;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  transition: 3s;
+}
+.mask:hover {
+  opacity: 0%;
+}

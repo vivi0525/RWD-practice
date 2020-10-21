@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.left_area{
+    width: 366px;
+    height: 100vh;
+    background-color: lightgray;
+    float: left;
+    padding-top: 70px;
+}
+.mb_btn{
+    display: none;
+}
+.logo{
+    width: 150px;
+    height: 120px;
+    background-image: url('../image/moneycat.jpg');
+    background-size: cover;
+    background-position: 40% 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.nav_btn{
+    text-align: center;
+}
+.btn{
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+    margin-right: 20px;
+}
+.right_area{
+    width: calc(100% - 366px);
+    height: 100vh;
+    float: left;
+    position: relative;
+}
+.block{
+    width: 768px;
+    height: 570px;
+    background-color: tomato;
+    position: absolute;
+    /* 做圖形置中的部分 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#box_x{
+    width: 100%;
+    height: calc(50% - 2.5px);
+    margin-bottom: 5px;
+    background-image: url(../image/img_parallax.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#box_y{
+    width: calc(50% - 2.5px);
+    height: calc(50% - 2.5px);
+    margin-right: 5px;
+    background-image: url(../image/img_parallax2.jpg);
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+#box_z{
+    width: calc(50% - 2.5px);
+    height: calc(50% - 2.5px);
+    background-image: url(../image/img_parallax3.jpg);
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    transition: 5s;
+}
+.mask:hover{
+    opacity: 0%;
+}
+

@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.left_area{
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    padding: 15px 20px;
+    /* 設定側邊欄的位置 */
+    position: relative;
+}
+.mb_btn{
+    width: 40px;
+    height: 50px;
+    background-color: black;
+}
+.logo{
+    width: 54px;
+    height: 54px;
+    background-image: url(../image/moneycat.jpg);
+    background-size: cover;
+    background-position: 40% 50%;
+    /*background-position 改變LOGO照片的位置 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nan_btn{
+    display: none;
+}
+.right_area{
+    width: 100%;
+    height: auto;
+}
+.block{
+    width: 100%;
+    height: auto;
+}
+.box{
+    width: 100%;
+    height: 50vh;
+    background-color: indianred;
+    background-size: cover;
+    background-position: center;
+}
+.x{
+    background-image: url(../image/img_parallax.jpg);
+}
+.y{
+    background-image: url(../image/img_parallax2.jpg);
+}
+.z{
+    background-image: url(../image/img_parallax3.jpg);
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+    transition: 5s;
+  }
+  .mask:hover {
+    opacity: 0%;
+  }
